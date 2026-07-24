@@ -37,14 +37,53 @@
   </header>
 
   <!-- Hero Section (Destaque Principal) -->
-  <section class="hero">
-    <div class="container hero-container">
-      <h1>TRANSPORTE E LOGÍSTICA COM <span class="highlight">EXCELÊNCIA E AGILIDADE</span></h1>
-      <p>Soluções personalizadas em coletas, entregas e gestão de malotes para a sua empresa com total pontualidade.</p>
-      <div class="hero-actions">
-        <a href="https://wa.me/5581983708746?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="btn-primary">Falar no WhatsApp</a>
-        <a href="#servicos" class="btn-outline">Ver Nossos Serviços</a>
+  <section class="hero-section">
+    <div class="hero-split-container">
+      
+      <!-- Lado Esquerdo: Conteúdo -->
+      <div class="hero-left">
+        <div class="hero-brand">
+          <img src="logo.svg" alt="AR Transportes" class="hero-logo">
+        </div>
+        <h1 class="hero-title">ENTREGA <br><span class="highlight">EXPRESSA</span></h1>
+        
+        <div class="hero-subtitle-block">
+          <div class="stopwatch-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="13" r="8"></circle>
+              <path d="M12 9v4l2 2"></path>
+              <path d="M12 2v3"></path>
+              <path d="M9 2h6"></path>
+            </svg>
+          </div>
+          <span class="hero-subtitle">Rapidez que conecta seu negócio.</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/5581983708746?text=Olá! Vim pelo site e gostaria de solicitar um orçamento." target="_blank" class="btn-primary">Falar no WhatsApp</a>
+          <a href="#servicos" class="btn-outline">Ver Nossos Serviços</a>
+        </div>
+
+        <!-- Faixa azul com curva no rodapé esquerdo -->
+        <div class="hero-info-banner">
+          <div class="info-banner-content">
+            <span class="banner-check-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+            <span>Entregas rápidas e seguras em Caruaru e região.</span>
+          </div>
+          <div class="info-banner-curve"></div>
+        </div>
       </div>
+      
+      <!-- Lado Direito: Imagem -->
+      <div class="hero-right">
+        <img src="assets/hero-delivery.png" alt="Entregador de moto AR Transportes" class="hero-bg-img">
+        <div class="hero-gold-wave"></div>
+      </div>
+      
     </div>
   </section>
 
@@ -58,107 +97,203 @@
 
       <div class="services-grid">
 
-        <!-- Card 1 -->
+        <!-- Card 1: Logística para Empresas -->
         <article class="card">
-          <div class="card-body">
-            <div class="card-icon">🏢</div>
-            <h3 class="card-title">LOGÍSTICA PARA EMPRESAS</h3>
-            <p class="card-text">Soluções inteligentes para otimizar suas operações.</p>
+          <div class="card-header">
+            <img src="logo.svg" alt="AR Transportes" class="card-logo">
+            <h3 class="card-title">LOGÍSTICA PARA <br><span class="highlight">EMPRESAS</span></h3>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <line x1="9" y1="22" x2="9" y2="16"></line>
+                <path d="M9 16h6v6"></path>
+                <path d="M12 2v4"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M16 10h.01"></path>
+                <path d="M16 14h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M8 14h.01"></path>
+              </svg>
+            </div>
+            <p class="card-description">Soluções inteligentes para otimizar suas operações.</p>
+          </div>
+          <div class="card-image-wrap">
+            <img src="assets/service-logistica.png" alt="Logística para Empresas" class="card-service-img">
           </div>
           <div class="card-footer">
             <span class="check-icon">✓</span>
             <span>Parceria que gera eficiência e reduz custos.</span>
+            <div class="footer-gold-triangle"></div>
           </div>
         </article>
 
-        <!-- Card 2 -->
+        <!-- Card 2: Coleta Programada -->
         <article class="card">
-          <div class="card-body">
-            <div class="card-icon">📅</div>
-            <h3 class="card-title">COLETA PROGRAMADA</h3>
-            <p class="card-text">Organização e pontualidade para sua rotina.</p>
+          <div class="card-header">
+            <img src="logo.svg" alt="AR Transportes" class="card-logo">
+            <h3 class="card-title">COLETA <br><span class="highlight">PROGRAMADA</span></h3>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <p class="card-description">Organização e pontualidade para sua rotina.</p>
+          </div>
+          <div class="card-image-wrap">
+            <img src="assets/service-coleta.png" alt="Coleta Programada" class="card-service-img">
           </div>
           <div class="card-footer">
             <span class="check-icon">✓</span>
             <span>Coletas diárias ou agendadas conforme a necessidade.</span>
+            <div class="footer-gold-triangle"></div>
           </div>
         </article>
 
-        <!-- Card 3 -->
+        <!-- Card 3: E-Commerce -->
         <article class="card">
-          <div class="card-body">
-            <div class="card-icon">🛒</div>
-            <h3 class="card-title">E-COMMERCE</h3>
-            <p class="card-text">Entregas para lojas virtuais e marketplaces com segurança.</p>
+          <div class="card-header">
+            <img src="logo.svg" alt="AR Transportes" class="card-logo">
+            <h3 class="card-title"><span class="highlight">E-COMMERCE</span></h3>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+            <p class="card-description">Entregas para lojas virtuais e marketplaces com segurança.</p>
+          </div>
+          <div class="card-image-wrap">
+            <img src="assets/service-ecommerce.png" alt="E-Commerce" class="card-service-img">
           </div>
           <div class="card-footer">
             <span class="check-icon">✓</span>
             <span>Seu cliente recebe, seu negócio cresce.</span>
+            <div class="footer-gold-triangle"></div>
           </div>
         </article>
 
-        <!-- Card 4 -->
+        <!-- Card 4: Transporte de Documentos -->
         <article class="card">
-          <div class="card-body">
-            <div class="card-icon">📁</div>
-            <h3 class="card-title">TRANSPORTE DE DOCUMENTOS</h3>
-            <p class="card-text">Confidencialidade e cuidado em cada entrega.</p>
+          <div class="card-header">
+            <img src="logo.svg" alt="AR Transportes" class="card-logo">
+            <h3 class="card-title">TRANSPORTE DE <br><span class="highlight">DOCUMENTOS</span></h3>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <p class="card-description">Confidencialidade e cuidado em cada entrega.</p>
+          </div>
+          <div class="card-image-wrap">
+            <img src="assets/service-documentos.png" alt="Transporte de Documentos" class="card-service-img">
           </div>
           <div class="card-footer">
             <span class="check-icon">✓</span>
             <span>Documentos e malotes com total segurança.</span>
+            <div class="footer-gold-triangle"></div>
           </div>
         </article>
 
-        <!-- Card 5 -->
+        <!-- Card 5: Pequenas Cargas -->
         <article class="card">
-          <div class="card-body">
-            <div class="card-icon">📦</div>
-            <h3 class="card-title">PEQUENAS CARGAS</h3>
-            <p class="card-text">Transporte de pequenas cargas com segurança e pontualidade.</p>
+          <div class="card-header">
+            <img src="logo.svg" alt="AR Transportes" class="card-logo">
+            <h3 class="card-title">PEQUENAS <br><span class="highlight">CARGAS</span></h3>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                <polygon points="12 22.08 12 12 3 6.92 3 17 12 22.08"></polygon>
+                <polygon points="12 22.08 21 17 21 6.92 12 12 12 22.08"></polygon>
+                <polygon points="12 12 21 6.92 12 1.84 3 6.92 12 12"></polygon>
+                <line x1="12" y1="5.16" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <p class="card-description">Transporte de pequenas cargas com segurança e pontualidade.</p>
+          </div>
+          <div class="card-image-wrap">
+            <img src="assets/service-cargas.png" alt="Pequenas Cargas" class="card-service-img">
           </div>
           <div class="card-footer">
             <span class="check-icon">✓</span>
             <span>Cargas leves, entregas pesadas de compromisso.</span>
+            <div class="footer-gold-triangle"></div>
           </div>
         </article>
 
-        <!-- Card 6 -->
+        <!-- Card 6: Coleta em Transportadoras -->
         <article class="card">
-          <div class="card-body">
-            <div class="card-icon">🚚</div>
-            <h3 class="card-title">COLETA EM TRANSPORTADORAS</h3>
-            <p class="card-text">Retiramos sua carga nas principais transportadoras.</p>
+          <div class="card-header">
+            <img src="logo.svg" alt="AR Transportes" class="card-logo">
+            <h3 class="card-title">COLETA EM <br><span class="highlight">TRANSPORTADORAS</span></h3>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <p class="card-description">Retiramos sua carga nas principais transportadoras.</p>
+          </div>
+          <div class="card-image-wrap">
+            <img src="assets/service-transportadoras.png" alt="Coleta em Transportadoras" class="card-service-img">
           </div>
           <div class="card-footer">
             <span class="check-icon">✓</span>
             <span>Mais agilidade para o seu dia a dia.</span>
+            <div class="footer-gold-triangle"></div>
           </div>
         </article>
 
-        <!-- Card 7 -->
+        <!-- Card 7: Malote Empresarial -->
         <article class="card">
-          <div class="card-body">
-            <div class="card-icon">✉️</div>
-            <h3 class="card-title">MALOTE EMPRESARIAL</h3>
-            <p class="card-text">Malotes e correspondências com agilidade e sigilo garantido.</p>
+          <div class="card-header">
+            <img src="logo.svg" alt="AR Transportes" class="card-logo">
+            <h3 class="card-title">MALOTE <br><span class="highlight">EMPRESARIAL</span></h3>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <p class="card-description">Malotes e correspondências com agilidade e sigilo garantido.</p>
+          </div>
+          <div class="card-image-wrap">
+            <img src="assets/service-documentos.png" alt="Malote Empresarial" class="card-service-img">
           </div>
           <div class="card-footer">
             <span class="check-icon">✓</span>
             <span>Informações que chegam com responsabilidade.</span>
+            <div class="footer-gold-triangle"></div>
           </div>
         </article>
 
-        <!-- Card 8 -->
+        <!-- Card 8: Logística Reversa -->
         <article class="card">
-          <div class="card-body">
-            <div class="card-icon">🔄</div>
-            <h3 class="card-title">LOGÍSTICA REVERSA</h3>
-            <p class="card-text">Devoluções e trocas com praticidade e segurança.</p>
+          <div class="card-header">
+            <img src="logo.svg" alt="AR Transportes" class="card-logo">
+            <h3 class="card-title">LOGÍSTICA <br><span class="highlight">REVERSA</span></h3>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <polyline points="1 20 1 14 7 14"></polyline>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+              </svg>
+            </div>
+            <p class="card-description">Devoluções e trocas com praticidade e segurança.</p>
+          </div>
+          <div class="card-image-wrap">
+            <img src="assets/service-ecommerce.png" alt="Logística Reversa" class="card-service-img">
           </div>
           <div class="card-footer">
             <span class="check-icon">✓</span>
             <span>Soluções completas para o seu negócio.</span>
+            <div class="footer-gold-triangle"></div>
           </div>
         </article>
 
@@ -175,22 +310,40 @@
       </div>
       <div class="differentials-grid">
         <div class="diff-card">
-          <div class="diff-icon">⚡</div>
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="diff-svg">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
           <h4>Agilidade</h4>
           <p>Entregas rápidas e eficientes para atender sua urgência.</p>
         </div>
         <div class="diff-card">
-          <div class="diff-icon">🛡️</div>
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="diff-svg">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
           <h4>Segurança</h4>
           <p>Sua carga com total proteção durante todo o transporte.</p>
         </div>
         <div class="diff-card">
-          <div class="diff-icon">📍</div>
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="diff-svg">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
           <h4>Cobertura</h4>
           <p>Atendemos Caruaru e toda a região metropolitana.</p>
         </div>
         <div class="diff-card">
-          <div class="diff-icon">💰</div>
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="diff-svg">
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
           <h4>Preço Justo</h4>
           <p>Competitividade sem perder a qualidade do serviço.</p>
         </div>
