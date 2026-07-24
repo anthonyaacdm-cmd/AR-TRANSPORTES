@@ -1,395 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR Transportes | Soluções Logísticas em Caruaru</title>
-    <meta name="description" content="AR Transportes - Entregas expressas, coletas programadas e soluções logísticas para empresas em Caruaru e região.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Transportes | Soluções Logísticas Inteligentes</title>
+  <meta name="description" content="AR Transportes - Entregas expressas, coletas programadas e soluções logísticas para empresas em Caruaru e região.">
+  
+  <!-- Tipografia Oficial: Montserrat (Títulos) e Open Sans (Corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="logo.svg" alt="AR Transportes" class="logo-img">
-                <span class="logo-text">TRANSPORTES</span>
-            </a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#inicio" class="nav-link active">Início</a></li>
-                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li><a href="#contato" class="nav-link">Contato</a></li>
-                </ul>
-            </nav>
-            <a href="https://wa.me/5581983708746" target="_blank" class="btn-header">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-                Fale Conosco
-            </a>
-            <button class="menu-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-bg">
-            <div class="hero-diagonal"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span>&#9670;</span> Logística Inteligente
-                </div>
-                <h1 class="hero-title">
-                    Conectando <span class="gold">Negócios</span> com Rapidez e <span class="gold">Segurança</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Soluções logísticas completas para impulsionar o seu negócio em Caruaru e região.
-                </p>
-                <p class="hero-description">
-                    Entregas expressas, coletas programadas, distribuição de mercadorias e soluções logísticas para empresas, sempre com rapidez, segurança e confiança. Atendimento personalizado e compromisso com prazos.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#servicos" class="btn btn-primary">
-                        Nossos Serviços
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="https://wa.me/5581983708746?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="btn btn-whatsapp">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                        </svg>
-                        Solicitar Orçamento
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-graphic">
-                    <div class="hero-circle"></div>
-                    <div class="hero-logo-center">
-                        <img src="logo.svg" alt="AR Transportes" class="hero-logo-img">
-                    </div>
-                    <div class="hero-stat-card">
-                        <div class="stat-card-icon">📦</div>
-                        <div class="stat-card-text">
-                            <div class="stat-card-number">10k+</div>
-                            <div class="stat-card-label">Entregas</div>
-                        </div>
-                    </div>
-                    <div class="hero-stat-card">
-                        <div class="stat-card-icon">✓</div>
-                        <div class="stat-card-text">
-                            <div class="stat-card-number">98%</div>
-                            <div class="stat-card-label">Satisfação</div>
-                        </div>
-                    </div>
-                    <div class="hero-stat-card">
-                        <div class="stat-card-icon">⚡</div>
-                        <div class="stat-card-text">
-                            <div class="stat-card-number">24h</div>
-                            <div class="stat-card-label">Express</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Topo / Cabeçalho -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="logo">
+        <img src="logo.svg" alt="AR Transportes" class="logo-img">
+        <span class="logo-sub">TRANSPORTES</span>
+      </a>
+      <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="https://wa.me/5581983708746" target="_blank" class="btn-primary">Solicitar Cotação</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-    <!-- Stats Bar -->
-    <section class="stats-bar">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="500">0</span>+
-                    <span class="stat-label">Clientes Atendidos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="10000">0</span>+
-                    <span class="stat-label">Entregas Realizadas</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="98">0</span>%
-                    <span class="stat-label">Satisfação</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="5">0</span>+
-                    <span class="stat-label">Anos de Experiência</span>
-                </div>
-            </div>
+  <!-- Hero Section (Destaque Principal) -->
+  <section class="hero">
+    <div class="container hero-container">
+      <h1>TRANSPORTE E LOGÍSTICA COM <span class="highlight">EXCELÊNCIA E AGILIDADE</span></h1>
+      <p>Soluções personalizadas em coletas, entregas e gestão de malotes para a sua empresa com total pontualidade.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5581983708746?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="btn-primary">Falar no WhatsApp</a>
+        <a href="#servicos" class="btn-outline">Ver Nossos Serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grade de Serviços -->
+  <section id="servicos" class="services-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>SOLUÇÕES LOGÍSTICAS</h2>
+        <p>Conheça nossos serviços desenvolvidos para otimizar a rotina do seu negócio</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-body">
+            <div class="card-icon">🏢</div>
+            <h3 class="card-title">LOGÍSTICA PARA EMPRESAS</h3>
+            <p class="card-text">Soluções inteligentes para otimizar suas operações.</p>
+          </div>
+          <div class="card-footer">
+            <span class="check-icon">✓</span>
+            <span>Parceria que gera eficiência e reduz custos.</span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-body">
+            <div class="card-icon">📅</div>
+            <h3 class="card-title">COLETA PROGRAMADA</h3>
+            <p class="card-text">Organização e pontualidade para sua rotina.</p>
+          </div>
+          <div class="card-footer">
+            <span class="check-icon">✓</span>
+            <span>Coletas diárias ou agendadas conforme a necessidade.</span>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-body">
+            <div class="card-icon">🛒</div>
+            <h3 class="card-title">E-COMMERCE</h3>
+            <p class="card-text">Entregas para lojas virtuais e marketplaces com segurança.</p>
+          </div>
+          <div class="card-footer">
+            <span class="check-icon">✓</span>
+            <span>Seu cliente recebe, seu negócio cresce.</span>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="card-body">
+            <div class="card-icon">📁</div>
+            <h3 class="card-title">TRANSPORTE DE DOCUMENTOS</h3>
+            <p class="card-text">Confidencialidade e cuidado em cada entrega.</p>
+          </div>
+          <div class="card-footer">
+            <span class="check-icon">✓</span>
+            <span>Documentos e malotes com total segurança.</span>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card">
+          <div class="card-body">
+            <div class="card-icon">📦</div>
+            <h3 class="card-title">PEQUENAS CARGAS</h3>
+            <p class="card-text">Transporte de pequenas cargas com segurança e pontualidade.</p>
+          </div>
+          <div class="card-footer">
+            <span class="check-icon">✓</span>
+            <span>Cargas leves, entregas pesadas de compromisso.</span>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card">
+          <div class="card-body">
+            <div class="card-icon">🚚</div>
+            <h3 class="card-title">COLETA EM TRANSPORTADORAS</h3>
+            <p class="card-text">Retiramos sua carga nas principais transportadoras.</p>
+          </div>
+          <div class="card-footer">
+            <span class="check-icon">✓</span>
+            <span>Mais agilidade para o seu dia a dia.</span>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="card">
+          <div class="card-body">
+            <div class="card-icon">✉️</div>
+            <h3 class="card-title">MALOTE EMPRESARIAL</h3>
+            <p class="card-text">Malotes e correspondências com agilidade e sigilo garantido.</p>
+          </div>
+          <div class="card-footer">
+            <span class="check-icon">✓</span>
+            <span>Informações que chegam com responsabilidade.</span>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card">
+          <div class="card-body">
+            <div class="card-icon">🔄</div>
+            <h3 class="card-title">LOGÍSTICA REVERSA</h3>
+            <p class="card-text">Devoluções e trocas com praticidade e segurança.</p>
+          </div>
+          <div class="card-footer">
+            <span class="check-icon">✓</span>
+            <span>Soluções completas para o seu negócio.</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais Section -->
+  <section id="diferenciais" class="differentials-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nossos Diferenciais</h2>
+        <p>Por que escolher a AR Transportes?</p>
+      </div>
+      <div class="differentials-grid">
+        <div class="diff-card">
+          <div class="diff-icon">⚡</div>
+          <h4>Agilidade</h4>
+          <p>Entregas rápidas e eficientes para atender sua urgência.</p>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="servicos" class="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Nossos Serviços</span>
-                <h2 class="section-title">Soluções <span class="gold">Logísticas</span></h2>
-                <p class="section-description">Soluções completas para atender todas as suas necessidades logísticas com eficiência e segurança</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🚚</div>
-                    <h3 class="service-title">Entregas Expressas</h3>
-                    <p class="service-description">Entregas rápidas e seguras para sua urgência. Prioridade máxima para sua encomenda.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📅</div>
-                    <h3 class="service-title">Coletas Programadas</h3>
-                    <p class="service-description">Agende coletas no melhor dia e horário para você. Organização e praticidade.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3 class="service-title">Logística Empresarial</h3>
-                    <p class="service-description">Soluções personalizadas para sua empresa. Contratos recorrentes e demandas pontuais.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛒</div>
-                    <h3 class="service-title">E-commerce</h3>
-                    <p class="service-description">Integração completa com sua loja virtual. Entregas para todo o Brasil.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📦</div>
-                    <h3 class="service-title">Pequenas Cargas</h3>
-                    <p class="service-description">Encomendas de todos os tamanhos com segurança e agilidade.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📄</div>
-                    <h3 class="service-title">Documentos</h3>
-                    <p class="service-description">Documentos importantes com total segurança e sigilo.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚛</div>
-                    <h3 class="service-title">Coletas Integradas</h3>
-                    <p class="service-description">Coletas em transportadoras parceiras com facilidade.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📬</div>
-                    <h3 class="service-title">Malote Empresarial</h3>
-                    <p class="service-description">Serviço de malote para sua empresa com regularidade e pontualidade.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔄</div>
-                    <h3 class="service-title">Logística Reversa</h3>
-                    <p class="service-description">Devoluções e trocas com toda a facilidade que você precisa.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📍</div>
-                    <h3 class="service-title">Distribuição</h3>
-                    <p class="service-description">Distribuição eficiente para sua rede de clientes e pontos de venda.</p>
-                </div>
-            </div>
+        <div class="diff-card">
+          <div class="diff-icon">🛡️</div>
+          <h4>Segurança</h4>
+          <p>Sua carga com total proteção durante todo o transporte.</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <span class="section-tag">Quem Somos</span>
-                    <h2 class="section-title">Sobre a <span class="gold">AR Transportes</span></h2>
-                    <p class="about-text">
-                        A <strong>AR Transportes</strong> é uma empresa especializada em soluções logísticas e transporte de encomendas, oferecendo serviços ágeis, seguros e confiáveis para pessoas físicas e empresas em <strong>Caruaru e região</strong>.
-                    </p>
-                    <p class="about-text">
-                        Atuamos com foco na eficiência operacional, proporcionando coletas, entregas e distribuição de mercadorias de forma organizada, pontual e com atendimento personalizado. Nosso compromisso é simplificar a logística dos nossos clientes, garantindo tranquilidade em cada operação.
-                    </p>
-                    <div class="about-differentials">
-                        <h3 class="differentials-title">Nossos Diferenciais</h3>
-                        <ul class="differentials-list">
-                            <li>
-                                <span class="check-icon">✓</span>
-                                Atendimento rápido e personalizado
-                            </li>
-                            <li>
-                                <span class="check-icon">✓</span>
-                                Pontualidade e compromisso com prazos
-                            </li>
-                            <li>
-                                <span class="check-icon">✓</span>
-                                Transporte seguro de encomendas e documentos
-                            </li>
-                            <li>
-                                <span class="check-icon">✓</span>
-                                Soluções logísticas para empresas de diversos segmentos
-                            </li>
-                            <li>
-                                <span class="check-icon">✓</span>
-                                Flexibilidade para demandas pontuais ou contratos recorrentes
-                            </li>
-                            <li>
-                                <span class="check-icon">✓</span>
-                                Atendimento em Caruaru e região
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about-cards">
-                    <div class="about-card">
-                        <div class="about-card-icon">🎯</div>
-                        <h4>Nossa Missão</h4>
-                        <p>Conectar negócios com rapidez, segurança e confiança, simplificando a logística dos nossos clientes.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">👁️</div>
-                        <h4>Nossa Visão</h4>
-                        <p>Ser referência em logística na região de Caruaru, reconhecida pela qualidade e compromisso.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-card-icon">💪</div>
-                        <h4>Nossos Valores</h4>
-                        <p>Responsabilidade, transparência, eficiência e respeito ao cliente.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="diff-card">
+          <div class="diff-icon">📍</div>
+          <h4>Cobertura</h4>
+          <p>Atendemos Caruaru e toda a região metropolitana.</p>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-diagonal"></div>
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Pronto para Otimizar sua Logística?</h2>
-                <p class="cta-description">Entre em contato agora mesmo e descubra como a AR Transportes pode ajudar o seu negócio a crescer com eficiência.</p>
-                <a href="https://wa.me/5581983708746?text=Olá! Gostaria de saber mais sobre os serviços da AR Transportes." target="_blank" class="btn btn-gold">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                    </svg>
-                    Fale Conosco no WhatsApp
-                </a>
-            </div>
+        <div class="diff-card">
+          <div class="diff-icon">💰</div>
+          <h4>Preço Justo</h4>
+          <p>Competitividade sem perder a qualidade do serviço.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contato" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Contato</span>
-                <h2 class="section-title">Fale <span class="gold">Conosco</span></h2>
-                <p class="section-description">Estamos prontos para atender você e oferecer a melhor solução logística</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">📱</div>
-                        <h4>WhatsApp</h4>
-                        <p>(81) 98370-8746</p>
-                        <a href="https://wa.me/5581983708746" target="_blank" class="contact-link">
-                            Enviar mensagem
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">📍</div>
-                        <h4>Localização</h4>
-                        <p>Caruaru - PE</p>
-                        <p>Região Metropolitana</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">⏰</div>
-                        <h4>Horário de Atendimento</h4>
-                        <p>Segunda a Sexta</p>
-                        <p><strong>08:00 às 18:00</strong></p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nome Completo</label>
-                            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Telefone / WhatsApp</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Sua Mensagem</label>
-                            <textarea id="message" name="message" rows="4" required placeholder="Como podemos ajudar?"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
-                            </svg>
-                            Enviar Mensagem
-                        </button>
-                    </form>
-                </div>
-            </div>
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="logo-white.svg" alt="AR Transportes" class="footer-logo-img">
+          <span class="footer-logo-text">TRANSPORTES</span>
         </div>
-    </section>
+        <p class="footer-tagline">Conectando negócios com rapidez, segurança e confiança.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <span class="footer-icon">📱</span>
+            <a href="https://wa.me/5581983708746" target="_blank">(81) 98370-8746</a>
+          </li>
+          <li>
+            <span class="footer-icon">📍</span>
+            <span>Caruaru - PE</span>
+          </li>
+          <li>
+            <span class="footer-icon">⏰</span>
+            <span>Seg - Sex: 08:00 - 18:00</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AR Transportes — Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <img src="logo-white.svg" alt="AR Transportes" class="logo-img">
-                        <span class="logo-text">TRANSPORTES</span>
-                    </a>
-                    <p class="footer-tagline">Conectando negócios com rapidez, segurança e confiança. Soluções logísticas completas em Caruaru e região.</p>
-                </div>
-                <div class="footer-links footer-col">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact footer-col">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li>
-                            <span>📱</span>
-                            <a href="https://wa.me/5581983708746" target="_blank">(81) 98370-8746</a>
-                        </li>
-                        <li>
-                            <span>📍</span>
-                            <span>Caruaru - PE</span>
-                        </li>
-                        <li>
-                            <span>⏰</span>
-                            <span>Seg - Sex: 08:00 - 18:00</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 AR Transportes. Todos os direitos reservados.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Termos de Uso</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5581983708746?text=Olá! Vim pelo site e gostaria de mais informações." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/5581983708746?text=Olá! Vim pelo site e gostaria de mais informações." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
-    </a>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
