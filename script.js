@@ -1,8 +1,10 @@
 // ========================================
 // AR TRANSPORTES - Website Scripts
+// Premium Version
 // ========================================
 
 document.addEventListener('DOMContentLoaded', function() {
+
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
@@ -14,8 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
+        document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function() {
                 menuToggle.classList.remove('active');
                 nav.classList.remove('active');
@@ -25,18 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Header scroll effect
     const header = document.querySelector('.header');
-    let lastScroll = 0;
 
     window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 100) {
-            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+        if (window.pageYOffset > 50) {
+            header.classList.add('scrolled');
         } else {
-            header.style.boxShadow = '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)';
+            header.classList.remove('scrolled');
         }
-
-        lastScroll = currentScroll;
     });
 
     // Smooth scroll for anchor links
@@ -45,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                const headerOffset = 70;
+                const headerOffset = 80;
                 const elementPosition = target.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -65,27 +61,30 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
+                // Stagger animation
+                setTimeout(() => {
+                    entry.target.classList.add('animate');
+                }, index * 100);
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
     // Observe all animated elements
-    const animatedElements = document.querySelectorAll('.service-card, .about-card, .contact-card');
-    animatedElements.forEach(el => observer.observe(el));
+    document.querySelectorAll('.service-card, .about-card, .contact-card').forEach(el => {
+        observer.observe(el);
+    });
 
     // Stats counter animation
-    const statsSection = document.querySelector('.stats');
+    const statsSection = document.querySelector('.stats-bar');
     let statsAnimated = false;
 
     function animateStats() {
         if (statsAnimated) return;
 
-        const statNumbers = document.querySelectorAll('.stat-number');
-        statNumbers.forEach(stat => {
+        document.querySelectorAll('.stat-number').forEach(stat => {
             const target = parseInt(stat.getAttribute('data-target'));
             const duration = 2000;
             const step = target / (duration / 16);
@@ -132,11 +131,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const phone = document.getElementById('phone').value;
             const message = document.getElementById('message').value;
 
-            // Format phone number (remove non-numeric characters)
-            const cleanPhone = phone.replace(/\D/g, '');
-
             // Create WhatsApp message
-            const whatsappMessage = `Olá! Vim pelo site da AR Transportes.\n\nNome: ${name}\nTelefone: ${phone}\n\nMensagem: ${message}`;
+            const whatsappMessage = `Olá! Vim pelo site da AR Transportes.\n\n*Nome:* ${name}\n*Telefone:* ${phone}\n\n*Mensagem:* ${message}`;
 
             // Encode message for URL
             const encodedMessage = encodeURIComponent(whatsappMessage);
@@ -146,13 +142,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Reset form
             contactForm.reset();
-
-            // Show success message (you can customize this)
-            alert('Mensagem preparada! Você será redirecionado para o WhatsApp.');
         });
     }
 
-    // Phone number formatting
+    // Phone number formatting (Brazilian format)
     const phoneInput = document.getElementById('phone');
 
     if (phoneInput) {
@@ -197,68 +190,72 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // WhatsApp button click tracking (optional analytics)
-    document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-        link.addEventListener('click', function() {
-            // You can add analytics tracking here
-            console.log('WhatsApp button clicked:', this.href);
-        });
-    });
-
-    // Parallax effect for hero shapes
+    // Parallax effect for hero visual
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
-        const shapes = document.querySelectorAll('.shape');
+        const heroVisual = document.querySelector('.hero-visual');
 
-        shapes.forEach((shape, index) => {
-            const speed = 0.5 + (index * 0.1);
-            shape.style.transform = `translateY(${scrolled * speed}px)`;
+        if (heroVisual && window.innerWidth > 992) {
+            heroVisual.style.transform = `translateY(${scrolled * 0.15}px)`;
+        }
+    });
+
+    // Hero stat cards floating animation enhancement
+    const heroStatCards = document.querySelectorAll('.hero-stat-card');
+    heroStatCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.3}s`;
+    });
+
+    // Button ripple effect
+    document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const ripple = document.createElement('span');
+            ripple.style.cssText = `
+                position: absolute;
+                width: 0;
+                height: 0;
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                left: ${x}px;
+                top: ${y}px;
+                animation: ripple 0.6s ease-out;
+            `;
+
+            this.style.position = 'relative';
+            this.style.overflow = 'hidden';
+            this.appendChild(ripple);
+
+            setTimeout(() => ripple.remove(), 600);
         });
     });
 
-    // Typing effect for hero subtitle (optional)
-    const heroSubtitle = document.querySelector('.hero-subtitle');
-    if (heroSubtitle) {
-        const text = heroSubtitle.textContent;
-        heroSubtitle.textContent = '';
-
-        let index = 0;
-        function typeWriter() {
-            if (index < text.length) {
-                heroSubtitle.textContent += text.charAt(index);
-                index++;
-                setTimeout(typeWriter, 50);
+    // Add ripple animation style
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes ripple {
+            to {
+                width: 300px;
+                height: 300px;
+                opacity: 0;
             }
         }
+    `;
+    document.head.appendChild(style);
 
-        // Start typing after a short delay
-        setTimeout(typeWriter, 500);
-    }
 });
 
 // Utility functions
 const Utils = {
-    // Validate email
-    isValidEmail: (email) => {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    },
-
-    // Validate phone (Brazilian format)
     isValidPhone: (phone) => {
         const cleaned = phone.replace(/\D/g, '');
         return cleaned.length >= 10 && cleaned.length <= 11;
     },
 
-    // Format currency
-    formatCurrency: (value) => {
-        return new Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-        }).format(value);
-    },
-
-    // Debounce function
     debounce: (func, wait) => {
         let timeout;
         return function executedFunction(...args) {
@@ -271,8 +268,3 @@ const Utils = {
         };
     }
 };
-
-// Export for use in other scripts if needed
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Utils;
-}
